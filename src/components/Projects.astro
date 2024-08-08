@@ -4,7 +4,8 @@ import GitHub from "../icons/GitHub.astro";
 import Link from "../icons/Link.astro";
 import Java from "../icons/Java.astro";
 import Android from "../icons/Android.astro";
-import Firebase from "./Firebase.astro";
+import Spring from "../icons/Spring.astro";
+import Mongo from "../icons/Mongo.astro";
 
 const TAGS = {
   ANDROID: {
@@ -13,14 +14,19 @@ const TAGS = {
     icon: Android,
   },
   JAVA: {
-    name: "Java V17",
+    name: "Java V21",
     class: "text-white",
     icon: Java,
   },
-  FIREBASE: {
-    name: "Firebase V9",
+  SPRING: {
+    name: "SpringBoot",
     class: "text-white",
-    icon: Firebase,
+    icon: Spring,
+  },
+  MONGO: {
+    name: "Mongo DB",
+    class: "text-white",
+    icon: Mongo,
   },
   
 
@@ -29,10 +35,10 @@ const PROJECTS = [
   {
     title: "MADBEATS - El 'Partyfinder' madrileño",
     description:
-      "Aplicación móvil basada en la búsqueda de eventos esencialmente nocturnos en la ciudad de Madrid. Dichos eventos se pueden filtrar por categoría musical o fecha de celebración. Fue mi trabajo final de grado.",
-    github: "https://github.com/DaniGonzaR/Always-mobile-app",
-    image: "ImagenAlways.webp",
-    tags: [TAGS.ANDROID, TAGS.JAVA, TAGS.FIREBASE],
+      "Trabajo final de grado. Aplicación móvil para dispositivos Android basada en la búsqueda de eventos esencialmente nocturnos en la ciudad de Madrid. Dichos eventos se pueden filtrar por el spot donde se celebra, categoría musical o fecha de celebración. El usuario tiene acceso a toda la información que proporciona MadBeats y tiene la opción de registrarse para poder gestionar sus eventos y spots favoritos.",
+    github: "https://github.com/dani-8a/dani-8a",
+    image: "MadBeats_logo.webp",
+    tags: [TAGS.ANDROID, TAGS.JAVA, TAGS.SPRING, TAGS.MONGO],
   },
   {
     title: "Nuevos Proyectos - En Desarrollo...",
@@ -77,7 +83,7 @@ const PROJECTS = [
           {github && (
             <LinkButton href={github}>
               <GitHub class="size-6" />
-              Código
+              GitHub
               
             </LinkButton>
           )}
